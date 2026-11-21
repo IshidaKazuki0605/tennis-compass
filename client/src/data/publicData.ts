@@ -49,7 +49,7 @@ export const setups: Setup[] = [
     details: ["飛距離・ボールスピードが不足し、ユーザーは「HTは使えない」と評価。"]
   },
   {
-    id: "heigo-radical-ht130-old",
+    id: "heigo-radical-ht130",
     owner: "平吾",
     racket: "HEAD Radical MP 2025",
     string: "HEAD HAWK TOUCH Anthracite",
@@ -107,7 +107,7 @@ export const comparisons: Comparison[] = [
     id: "heigo-hawk115-130",
     title: "HAWK TOUCH 1.15 → 1.30 mm",
     base: "heigo-radical-ht115",
-    target: "heigo-radical-ht130-old",
+    target: "heigo-radical-ht130",
     items: [
       { category: "打球特性", name: "飛び", score: "+" },
       { category: "打球特性", name: "コントロール", score: "." },
@@ -116,41 +116,7 @@ export const comparisons: Comparison[] = [
     ],
     note: "いずれも47 / 45 lb。比較時の加重条件など、詳細は未確認。"
   },
-  {
-    id: "gravity-pure-aero-98",
-    title: "平次 → Pure Aero 98",
-    base: "heiji-gravity-lynxtour",
-    target: "external-pure-aero-98",
-    items: [
-      { category: "打球特性", name: "飛び", score: "+" },
-      { category: "打球特性", name: "スピン", score: "." },
-      { category: "打球特性", name: "コントロール", score: "." },
-      { category: "打球感", name: "快適性", score: "+" },
-      { category: "ネットプレー", name: "タッチボレー", score: "--" }
-    ],
-    note: "比較対象側のセットアップとして RPM Blast 1.25 mm / 46・46 lb の記録あり。比較元のセットアップ詳細は要照合。"
-  },
-  {
-    id: "gravity-pure-aero",
-    title: "平次 → Pure Aero",
-    base: "heiji-gravity-lynxtour",
-    target: "external-pure-aero",
-    items: [
-      { category: "打球特性", name: "飛び", score: "+" },
-      { category: "打球特性", name: "スピン", score: "++" },
-      { category: "打球特性", name: "コントロール", score: "+" },
-      { category: "打球感", name: "快適性", score: "+" }
-    ],
-    note: "比較対象のセットアップ詳細および比較元のセットアップ詳細は未確認。"
-  },
-  {
-    id: "gravity-prestige",
-    title: "平次 → Prestige",
-    base: "heiji-gravity-lynxtour",
-    target: "external-prestige",
-    items: [],
-    note: "全項目「-」との評価記録あり。評価対象となった項目の内訳とセットアップ詳細は未確認。"
-  }
+
 ];
 
 export const otherRecords = [
