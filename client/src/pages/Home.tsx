@@ -76,7 +76,7 @@ export default function Home() {
                     {(setup.measurements ?? []).map((measurement) => (
                       <div key={measurement.label} className="bg-[#fbfcfa] px-4 py-3">
                         <div className="text-[11px] text-[#8a988e]">{measurement.label}</div>
-                        <div className="mt-1 text-base font-semibold tabular-nums text-[#254a34]">{measurement.value}</div>
+                        <div className="mt-1 text-base font-semibold tabular-nums text-[#254a34]">{measurement.value}</div>{measurement.condition && <div className="mt-1 text-[10px] leading-4 text-[#8a988e]">{measurement.condition}</div>}
                       </div>
                     ))}
                   </div>
@@ -117,13 +117,13 @@ export default function Home() {
                     <div className="rounded-xl bg-[#f5f8f4] p-4">
                       <div className="text-[10px] font-semibold tracking-wider text-[#819384]">BASE / 基準</div>
                       <div className="mt-1 font-semibold text-[#2c4a35]">{setupById.get(activeComparison.base)?.racket ?? "比較元の詳細未確認"}</div>
-                      <div className="mt-1 text-xs text-[#748278]">{setupById.get(activeComparison.base)?.string ?? ""}</div>
+                      <div className="mt-1 text-xs text-[#748278]">{[setupById.get(activeComparison.base)?.string, setupById.get(activeComparison.base)?.gauge, setupById.get(activeComparison.base)?.tension].filter(Boolean).join(" / ")}</div>
                     </div>
                     <ArrowLeftRight className="mx-auto text-[#91a397]" size={20} />
                     <div className="rounded-xl bg-[#f5f8f4] p-4">
                       <div className="text-[10px] font-semibold tracking-wider text-[#819384]">COMPARED / 比較対象</div>
                       <div className="mt-1 font-semibold text-[#2c4a35]">{setupById.get(activeComparison.target)?.racket ?? "比較対象の詳細未確認"}</div>
-                      <div className="mt-1 text-xs text-[#748278]">{setupById.get(activeComparison.target)?.string ?? ""}</div>
+                      <div className="mt-1 text-xs text-[#748278]">{[setupById.get(activeComparison.target)?.string, setupById.get(activeComparison.target)?.gauge, setupById.get(activeComparison.target)?.tension].filter(Boolean).join(" / ")}</div>
                     </div>
                   </div>
                 </div>
