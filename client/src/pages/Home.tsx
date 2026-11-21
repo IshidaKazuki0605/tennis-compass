@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { ArrowLeftRight, ChevronDown, ChevronUp, CircleDot, ClipboardList, Gauge, Ruler, Scale } from "lucide-react";
+import { ArrowLeftRight, ChevronDown, ChevronUp, CircleDot } from "lucide-react";
 import { comparisons, otherRecords, scaleLegend, setups } from "@/data/publicData";
 
 type Tab = "setups" | "comparisons" | "measurements";
