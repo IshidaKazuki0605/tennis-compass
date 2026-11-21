@@ -4,7 +4,7 @@ import { comparisons, otherRecords, scaleLegend, setups } from "@/data/publicDat
 
 type Tab = "setups" | "comparisons" | "measurements";
 
-const setupById = new Map(setups.map((setup) => [setup.id, setup]));
+const setupById = new Map(setups.map((setup) => [setup.id, setup] as const));
 const scoreLabel = (score: string) => scaleLegend.find((item) => item.score === score)?.label ?? "評価記録なし";
 
 export default function Home() {
