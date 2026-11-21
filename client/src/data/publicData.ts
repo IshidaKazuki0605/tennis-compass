@@ -49,16 +49,6 @@ export const setups: Setup[] = [
     details: ["飛距離・ボールスピードが不足し、ユーザーは「HTは使えない」と評価。"]
   },
   {
-    id: "heigo-radical-ht130",
-    owner: "平吾",
-    racket: "HEAD Radical MP 2025",
-    string: "HEAD HAWK TOUCH Anthracite",
-    gauge: "1.30 mm",
-    tension: "47 / 45 lb",
-    role: "過去セットアップ",
-    details: ["約1.5時間使用時点で「マットレス」のような感触。飛び・コントロールが不足し、サーブがやや遅いとの報告。"]
-  },
-  {
     id: "heiji-gravity-lynxtour",
     owner: "平次",
     racket: "HEAD Gravity MP L 2023",
