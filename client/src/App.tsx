@@ -2,7 +2,6 @@ import Home from "@/pages/Home";
 import Beta from "@/pages/Beta";
 
 export default function App() {
-  return window.location.pathname.replace(/\/$/, "").endsWith("/beta")
-    ? <Beta />
-    : <Home />;
+  const isBeta = window.location.hash.replace(/^#/, "").replace(/\/$/, "") === "/beta";
+  return isBeta ? <Beta /> : <Home />;
 }
