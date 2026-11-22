@@ -28,8 +28,8 @@ export default function Home() {
           <div className="flex items-center gap-3">
             <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#173f32] text-lg font-bold text-white">T</div>
             <div>
-              <div className="text-xl font-bold tracking-tight text-[#173f32]">Tennis Compass</div>
-              <div className="text-xs tracking-[0.18em] text-[#75877c]">テニコン / RACKET SETUP RECORDS</div>
+              <div className="text-xl font-bold tracking-tight text-[#173f32]">ラケットを比べるやつ</div>
+              <div className="text-xs tracking-[0.18em] text-[#75877c]">RACKET SETUP COMPARISON</div>
             </div>
           </div>
           <span className="rounded-full border border-[#d8e5d9] bg-[#f5faf5] px-3 py-1.5 text-xs font-medium text-[#456d52]">READ ONLY</span>
@@ -131,7 +131,7 @@ export default function Home() {
                   <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
                     <h3 className="font-bold text-[#294b35]">比較結果</h3>
                     <div className="flex flex-wrap gap-2 text-[11px] text-[#75857a]">
-                      {scaleLegend.map((item) => <span key={item.score}><b className="mr-1 text-[#315f40]">{item.score}</b>{item.label}</span>)}
+                      {scaleLegend.map((item) => <span key={item.score}>{item.label}</span>)}
                     </div>
                   </div>
                   {activeComparison.items.length ? (
@@ -142,7 +142,7 @@ export default function Home() {
                           <tr key={index} className="border-b border-[#f0f3ef] last:border-0">
                             <td className="py-3 pr-3 text-xs text-[#849188]">{item.category}</td>
                             <td className="py-3 pr-3 font-medium text-[#344f3b]">{item.name}</td>
-                            <td className="py-3 pr-3"><span className="inline-flex min-w-9 justify-center rounded-md bg-[#edf5ee] px-2 py-1 font-bold text-[#285b3b]">{item.score}</span><span className="ml-2 text-xs text-[#7e8c81]">{scoreLabel(item.score)}</span></td>
+                            <td className="py-3 pr-3"><span className="inline-flex rounded-md bg-[#edf5ee] px-2.5 py-1 text-xs font-semibold text-[#285b3b]">{scoreLabel(item.score)}</span></td>
                             <td className="py-3 text-xs text-[#758278]">{item.note ?? "—"}</td>
                           </tr>
                         ))}</tbody>
@@ -186,7 +186,7 @@ export default function Home() {
       </main>
 
       <footer className="border-t border-[#dce5dc] bg-white py-6 text-center text-xs text-[#91a096]">
-        Tennis Compass · テニコン
+        ラケットを比べるやつ
       </footer>
     </div>
   );
