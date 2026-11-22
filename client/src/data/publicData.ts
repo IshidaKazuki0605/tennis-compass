@@ -143,9 +143,9 @@ export const otherRecords = [
 ];
 
 export const scaleLegend = [
-  { score: "--", label: "明確に弱くなった" },
-  { score: "-", label: "少し弱くなった" },
-  { score: ".", label: "変わらなかった" },
-  { score: "+", label: "少し強くなった" },
-  { score: "++", label: "明確に強くなった" }
+  { score: "--", label: "明確に弱まった" },
+  { score: "-", label: "少し弱まった" },
+  { score: ".", label: "変化なし" },
+  { score: "+", label: "少し強まった" },
+  { score: "++", label: "明確に強まった" }
 ];
