@@ -26,7 +26,6 @@ export default function Home() {
       <header className="border-b border-[#dce5dc] bg-white">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-5">
           <div className="flex items-center gap-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#173f32] text-lg font-bold text-white">T</div>
             <div>
               <div className="text-xl font-bold tracking-tight text-[#173f32]">ラケットを比べるやつ</div>
               <div className="text-xs tracking-[0.18em] text-[#75877c]">RACKET SETUP COMPARISON</div>
@@ -38,7 +37,7 @@ export default function Home() {
 
       <main className="mx-auto max-w-6xl px-5 py-9">
         <section className="mb-8">
-          <p className="mb-2 text-xs font-semibold tracking-[0.2em] text-[#7d927f]">PERSONAL TENNIS DATABASE</p>
+          <p className="mb-2 text-xs font-semibold tracking-[0.2em] text-[#7d927f]">RACKET SETUP COMPARISON</p>
           <h1 className="text-3xl font-bold tracking-tight text-[#173f32] sm:text-4xl">セットアップ記録</h1>
           <p className="mt-3 max-w-2xl text-sm leading-7 text-[#68796e]">
             会話内で記録されたラケットセットアップ、実測値、比較結果を閲覧できます。
